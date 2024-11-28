@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Language Learning App</title>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="card-container">
+   <div class="card" id="wordCard">always</div>
+   <div class="controls">
+     <button id="prevButton">←</button>
+     <span id="step">0/10</span>
+     <button id="nextButton">→</button>
+   </div>
+   <div class="input-container">
+     <input type="text" id="translationInput" placeholder="Введіть переклад">
+     <button id="checkButton">Перевірити</button>
+   </div>
+   <div class="statistics">
+     <span class="correct">Вірно: <span id="correctCount">2</span></span>
+     <span class="incorrect">Невірно: <span id="incorrectCount">1</span></span>
+   </div>
+   <button id="showKnowledgeLevel">Показати рівень знань</button>
+ </div>
+ <div id="modal" class="hidden">
+   <div class="modal-content">
+     <h2>Ваш рівень знань</h2>
+     <p id="knowledgeLevel"></p>
+     <button id="closeModal">Закрити</button>
+   </div>
+ </div>
+ <script src="script.js"></script>
+</body>
+</html>
